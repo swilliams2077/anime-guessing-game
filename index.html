@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime Guessing Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <!--Header-->
+    <div class = "container">
+        <div class = "row">
+            <h1 class = "mx-auto">Anime Guessing Game</h1>
+        </div>
+    </div>
+
+    <br>
+
+    <!--Game Innterface-->
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm">
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h1 id = "gameWindow"></h1>
+                        </li>
+                        <li class="list-group-item">Remaining Guesses: <span id = "remainingGuess"></span></li>
+                        <li class="list-group-item">Correct Guesses: <span id = " correctGuess"></span></li>
+                        <li class="list-group-item">Wrong Guesses: <span id = "wrongGuess"></span></li>
+                    </ul>
+                </div>
+                <br>              
+                <div class="card" style="width: 18rem;">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Wins: <span id = "winCounter"></span></li>
+                        <li class="list-group-item">Losses: <span id = "lossCounter"></span></li>
+                        <li class="list-group-item mx-auto">
+                                <button type="button" class="btn btn-secondary btn-lg" id = "startGame">Start Game</button>
+                        </li>
+                    </ul>
+                </div>              
+            </div>
+            <div class = "col-sm">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" id = "animePhoto" src="assets/images/cropped/berserk_guts.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text" id = "characterName" style = "text-align: center">GUESS THIS ANIME!!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Control Panel-->
+
+    
+</body>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/js/game.js"></script>
+
+</html>
