@@ -69,6 +69,9 @@ function compareGuess(letter){
 
 function roundComplete(){
 
+    console.log(wordBlanks)
+    alert("You Win!!")
+
 }
 
 function imageCard (){
@@ -85,6 +88,7 @@ function imageCard (){
 // document.getElementById("startGame").onclick = startGame(); 
 startGame();
 imageCard();
+roundComplete();
 
 document.onkeypress = function(event) {
     var userGuess = event.key.toLocaleLowerCase();
