@@ -38,6 +38,8 @@ function startGame (){
     document.getElementById("remainingGuess").innerHTML = remainingGuess;
     document.getElementById("winCounter").innerHTML = wins;
     document.getElementById("lossCounter").innerHTML = loss;
+
+
 }
 
 function compareGuess(letter){
@@ -67,12 +69,6 @@ function compareGuess(letter){
     }
 }
 
-function roundComplete(){
-
-    console.log(wordBlanks)
-    alert("You Win!!")
-
-}
 
 function imageCard (){
     for (var i = 0; i <wordList.length; i++){
@@ -85,10 +81,25 @@ function imageCard (){
     }
 }
 
-// document.getElementById("startGame").onclick = startGame(); 
+function roundComplete (){
+    for (var j = 0; j < wordSelection; j++){   
+    }
+    for (var t = 0; t < wordBlanksLetters; t++){
+    }
+    if (wordBlanksLetters[t] == wordSelection[j]){
+        alert("progress!!!")
+    }
+
+    
+}
+
+// document.getElementById("#startGame").onclick = startGame(); 
 startGame();
 imageCard();
 roundComplete();
+
+
+
 
 document.onkeypress = function(event) {
     var userGuess = event.key.toLocaleLowerCase();
@@ -97,6 +108,8 @@ document.onkeypress = function(event) {
     document.getElementById("gameWindow").innerHTML = wordBlanksLetters.join(" ");
 
     console.log(userGuess);
+
+
 
 };
 
